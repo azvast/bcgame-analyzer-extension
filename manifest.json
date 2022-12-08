@@ -1,0 +1,27 @@
+{
+    "name": "BC",
+    "version": "1.0.0",
+    "description": "BC status",
+    "manifest_version": 3,
+    "author": "Sampurna Chapagain",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "BC"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://bc.game/game/crash/*"],
+            "js": ["document_start.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["inject.js"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
