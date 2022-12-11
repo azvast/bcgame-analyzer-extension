@@ -1,12 +1,12 @@
 {
-    "name": "BC",
+    "name": "BC.Game Analyzer",
     "version": "1.0.0",
-    "description": "BC status",
+    "description": "BC.Game Analyzer chrome extension",
     "manifest_version": 3,
-    "author": "Sampurna Chapagain",
+    "author": "azvast",
     "action":{
         "default_popup": "index.html",
-        "default_title": "BC"
+        "default_title": "BC.Game Analyzer"
     },
     "content_scripts": [
         {
